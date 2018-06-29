@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+>
+<CheckBox
+    android:id="@+id/cb_seat"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:layout_centerInParent="true"
+    android:button="@drawable/checkbox_seat"
+     />
+
+    <TextView
+        android:id="@+id/cb_seat_name"
+        android:maxLength="2"
+        android:maxLines="1"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+
+    <View
+        android:id="@+id/dividereview"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/cb_seat"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/seperator"
+        android:layout_alignStart="@id/cb_seat"
+        android:layout_alignEnd="@id/cb_seat"
+        android:layout_alignLeft="@id/cb_seat"
+        android:layout_alignRight="@id/cb_seat" />
+</LinearLayout>

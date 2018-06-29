@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    cardview:cardCornerRadius="5dp"
+    cardview:contentPadding="2dp"
+    cardview:cardBackgroundColor="#3E2723"
+    cardview:cardElevation="3dp"
+    android:layout_gravity="center"
+    cardview:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#F9FBE7"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:text="A"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            />
+
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/filled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="A"
+                android:gravity="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp"
+                />
+
+            <TextView
+            android:id="@+id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+                android:padding="5dp"
+                android:gravity="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"
+            />
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/number"
+            android:id="@+id/recycle_seats_dynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            />
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+
